@@ -1,0 +1,854 @@
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+
+  /* HEADER */
+
+  .header > div {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .header nav ul {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      list-style: none;
+      padding-left: 0;
+      padding-top: 0.5rem;
+
+  }
+
+  .header ul a {
+      background-color: #ebe3db;
+      color: black;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      transition-duration: 1s;
+  }
+
+  nav ul li .active {
+      background-color: #4c4442;
+      color: #fff;
+  }
+
+  nav ul li.active:hover {
+      background-color: #fff;
+      color: #4c4442;
+
+  }
+
+  .header ul a:hover {
+      color: #fff;
+      background-color: #950000;
+  }
+
+  .header div {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+  }
+
+  .header i {
+      color: #950000;
+      font-size: 0, 9375;
+  }
+
+  .header div img {
+      width: 90px;
+  }
+
+  /* FOOTER */
+  .footer {
+      background-image: url(../instructions/ressources/images/footer-bg.jpg);
+      color: #fff;
+  }
+
+  .address {
+      display: flex;
+      gap: 5rem;
+      justify-content: center;
+  }
+
+  .address h5 {
+      padding-bottom: .8rem;
+      border-bottom: 1px dashed #fff;
+  }
+
+  .address section,
+  .address address {
+      text-align: center;
+  }
+
+  .footer .l_academy {
+      background-color: #444444;
+      padding-block: 1rem;
+      text-align: center;
+  }
+
+  .footer img {
+      width: 75px;
+  }
+
+  .footer a {
+      color: #fff;
+  }
+
+  .footer .r_sociau div {
+      display: flex;
+  }
+
+  .footer i {
+      color: #fff;
+      font-size: 1rem;
+  }
+
+  .footer .r_sociau a {
+      margin: 1rem;
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      font-size: 1rem;
+  }
+
+  .footer p {
+      font-size: 1rem;
+  }
+
+  h5 {
+      font-size: 1.125rem;
+  }
+
+  /* GENERALITE */
+
+
+  body {
+      background-image: linear-gradient(to top, #ffffff 95%, #ffffff, #d3c9bf);
+  }
+
+  /* FONT-FACE    Athiti*/
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-bold.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-bold.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 700;
+
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-extralight.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-extralight.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-extralight.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 200;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-regular.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-regular.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-light.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-light.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-light.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-medium.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-medium.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-medium.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-semibold.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-semibold.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-semibold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 600;
+  }
+
+  /* FONT-FACE    Merienda*/
+
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-black.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-black.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-black.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 900;
+  }
+
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-bold.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-bold.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 700;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-extrabold.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-extrabold.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 800;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-light.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-light.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-light.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-medium.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-medium.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-medium.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-regular.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-regular.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-semibold.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-semibold.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-semibold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 600;
+  }
+
+  /* FIN FONT FACE */
+
+  i {
+      color: #950000;
+      display: flex;
+      font-size: 10px;
+  }
+
+  h2 {
+      text-align: center;
+  }
+
+  h2 {
+      font-size: 1.875rem;
+  }
+
+  h3 {
+      font-size: 1.5625rem;
+  }
+
+  h4 {
+      font-size: 1.25rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+      font-family: 'Merienda';
+  }
+
+  .container {
+      font-family: 'Athiti';
+      font-size: 1.125rem;
+  }
+
+  .container img {
+      width: 100%;
+  }
+
+  /* HOME */
+
+  .container {
+      margin-inline: auto;
+      max-width: 1400px;
+  }
+
+
+  .item {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-block: 1rem;
+  }
+
+  .slick-prev {
+      left: .7rem;
+      padding-left: 1.5rem;
+      z-index: 1;
+  }
+
+  .slick-next {
+      padding-right: 1.5rem;
+      right: .7rem;
+  }
+
+  .float img {
+      float: right;
+      width: 40%;
+  }
+
+  .clearfix {
+      overflow: auto;
+  }
+
+  .float p {
+      margin-right: 42%;
+  }
+
+  .float p:nth-child(2) {
+      margin-top: 0;
+  }
+
+  /* SPECIAL MENU */
+  .special_m {
+      margin-block: 1rem;
+  }
+
+  .flex {
+      display: flex;
+      gap: 1rem;
+  }
+
+  .flex section {
+      background-color: #ebe3db;
+  }
+
+  .flex img {
+      width: 100%;
+  }
+
+  /* Au survol des images des menus */
+  .parent_survol {
+      background-color: rgba(76, 67, 67, .9);
+      position: relative;
+  }
+
+  .survol {
+      border: 0.5rem solid #fff;
+      bottom: 1rem;
+      color: #fff;
+      left: 1rem;
+      opacity: 0;
+      position: absolute;
+      right: 1rem;
+      text-align: center;
+      top: 1rem;
+  }
+
+  .parent_survol:hover img {
+      opacity: 0.2;
+  }
+
+  .parent_survol:hover .survol {
+      opacity: 1;
+      transition-duration: 3s;
+  }
+
+  .survol p:first-child {
+      font-size: 3.125rem;
+  }
+
+  .special_m {
+      text-align: center;
+  }
+
+  /* TEXTE EN BAS DU MENU */
+  .flex ul {
+      list-style: none;
+      padding-left: 0;
+  }
+
+  .flex ul li {
+      border-bottom: 1px dashed #4c4343;
+      font-size: 0.9375rem;
+      margin-block: 1rem;
+      text-align: center;
+  }
+
+  .flex ul i {
+      margin-inline: 1rem;
+  }
+
+  .button {
+      background-color: #4c4442;
+      color: #fff;
+      display: flex;
+      font-size: 1rem;
+      justify-content: center;
+      margin-inline: auto;
+      margin-bottom: 1rem;
+      padding-block: 1rem;
+      text-decoration: none;
+      width: 75%;
+  }
+
+  .button:hover {
+      background-color: #950000;
+      color: #fff;
+      transition-duration: 2s;
+  }
+
+  .button img {
+      width: 1rem;
+      margin-right: 0.5rem;
+  }
+
+  /* PAGE ABOUT */
+
+  video {
+      height: auto;
+      margin-inline: 15%;
+      width: 70%;
+  }
+
+  .grid {
+      background-color: #ebe3db;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+      justify-items: center;
+
+  }
+
+  .grid img {
+      margin-bottom: 0;
+      margin-top: 1rem;
+      padding-block: 0.2rem;
+      padding-inline: 1rem;
+  }
+
+  .grid span {
+      margin-inline: 25%;
+      margin-bottom: 1rem;
+      margin-top: 0;
+  }
+
+  .dine_img div {
+      margin-block: 1rem;
+  }
+
+  .grid span {
+      border-bottom: none;
+      color: black;
+  }
+
+  /* PAGE MENU */
+
+  .article_mxtp {
+      text-align: center;
+  }
+
+  .button_mixitup {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+
+  }
+
+  .button_mixitup button {
+      background-color: #ebe3db;
+      border: 1px solid #ebe3db;
+      font-size: 1rem;
+      margin-block: 1rem;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      transition-duration: 2s;
+  }
+
+  .button_mixitup button:hover {
+      background-color: #950000;
+      color: #fff;
+  }
+
+  .mixitup {
+      background-color: #ebe3db;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      height: 100%;
+  }
+
+  .mixitup img {
+      padding-inline: 0.5rem;
+  }
+
+  /* SURVOL */
+  .survol_mix img {
+      width: 5rem;
+  }
+
+  .survoller_mix {
+      position: relative;
+
+  }
+
+  .survol_mix {
+
+      background-color: rgba(124, 117, 117, 0.9);
+      border: 0.5rem solid #fff;
+      bottom: 1rem;
+      color: #fff;
+      left: 1rem;
+      margin-block: 1rem;
+      opacity: 0;
+      padding-block: 2rem;
+      position: absolute;
+      right: 1rem;
+      text-align: center;
+      top: 1rem;
+      transform: scale(0);
+      transition-duration: 2s;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+
+
+  }
+
+  .survoller_mix:hover img {
+      opacity: 1;
+  }
+
+  .survoller_mix:hover .survol_mix {
+      transform: scale(1);
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+
+  }
+
+
+
+  /* DESERTS */
+  .desert_img {
+      background-color: #ebe3db;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1rem;
+  }
+
+
+
+  /* COCKTAILS */
+
+  .cocktail_img {
+      background-color: #ebe3db;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 0.9rem;
+      padding: 1rem;
+  }
+
+
+  .survoller_desert_cocktail {
+      background-color: rgba(76, 67, 67, .9);
+      position: relative;
+  }
+
+  .survol_desert_cocktail {
+      color: #fff;
+      border: 0.5rem solid #fff;
+      bottom: 1rem;
+      left: 1rem;
+      opacity: 0;
+      padding-block: 3rem;
+      position: absolute;
+      right: 1rem;
+      text-align: center;
+      top: 1rem;
+      transform: scale();
+  }
+
+  .survoller_desert_cocktail:hover img {
+      opacity: 0.2;
+  }
+
+  .survoller_desert_cocktail:hover .survol_desert_cocktail {
+      opacity: 1;
+      transition-duration: 3s;
+  }
+
+  .survol_desert_cocktail p:first-child {
+      font-size: 3.125rem;
+  }
+
+  .survol_desert_cocktail img {
+      width: 4rem;
+  }
+
+
+  /* page contact */
+
+  .contact h3 {
+      margin-left: 0;
+  }
+
+  .formulaire p {
+      text-align: center;
+  }
+
+  .formulaire form {
+      background-color: #ebe3db;
+      margin-inline: auto;
+      padding-bottom: 1rem;
+      width: 60%;
+  }
+
+  .formulaire form div {
+      display: flex;
+      margin-left: 7%;
+  }
+
+  .formulaire form div fieldset {
+      border: none;
+      width: 45%;
+  }
+
+  .formulaire form>fieldset {
+      border: none;
+      text-align: center;
+  }
+
+  .formulaire form button {
+      border: none;
+      background-color: #4c4442;
+      border-radius: 0.2rem;
+      color: #fff;
+      display: flex;
+      font-size: 1rem;
+      margin-inline: auto;
+      padding: 0.2rem 2rem;
+  }
+
+  .formulaire form button:hover {
+      background-color: #950000;
+      color: white;
+      transition-duration: 2s;
+  }
+
+  input {
+      border: 1px solid #4c4442;
+      border-radius: 0.2rem;
+      margin-left: 1rem;
+      width: 100%;
+  }
+
+  span {
+      color: #950000;
+      border-bottom: 1px dashed #950000;
+      margin-left: 0;
+      margin-right: 0.5rem;
+  }
+
+  textarea {
+      width: 83%;
+  }
+
+  form>h3 {
+      padding-left: 5rem;
+  }
+
+
+
+  /* TABLETTE */
+
+  @media screen and (min-width:781px) and (max-width:980px) {
+
+
+
+      .header > div,
+      .header .tab_menu {
+          display: block;
+          text-align: center;
+      }
+
+
+      .header .nav_tab {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+          list-style: none;
+          padding-left: 0;
+
+      }
+
+      .header div nav {
+          background-color: #ebe3db;
+          padding-bottom: 0.01rem;
+      }
+
+      .float img {
+          float: none;
+          width: 100%;
+      }
+
+      .float p {
+          margin-right: 0;
+      }
+  }
+
+
+  /* MOBILE */
+  @media screen and (max-width: 780px) {
+
+      .header > div,
+      .header .tab_menu {
+          display: block;
+          text-align: center;
+          margin-inline: auto;
+      }
+
+      .header .nav_tab {
+          display: block;
+          width: 100%;
+          padding-left: 0;
+
+      }
+
+      .header .nav_tab li a {
+          display: block;
+          padding-block: rem;
+          border-bottom: 1px solid #4c4442;
+
+      }
+
+      .header > div {
+          padding-left: 0;
+      }
+
+      .header div nav {
+          width: 100%;
+          background-color: #ebe3db;
+          padding-bottom: 0.01rem;
+      }
+
+
+
+      .float img {
+          float: none;
+          width: 100%;
+      }
+
+      .float p {
+          margin-right: 0;
+      }
+
+
+      input {
+          width: 90%;
+          margin-left: 1rem;
+          border: 1px solid #4c4442;
+          border-radius: 0.2rem;
+      }
+
+      .formulaire form div {
+          display: block;
+      }
+
+      .formulaire form div fieldset {
+          border: none;
+          width: 100%;
+      }
+
+
+
+
+
+      .flex {
+          display: block;
+      }
+
+      .flex section {
+          padding-bottom: 0.2rem;
+
+      }
+
+      .button {
+          width: 75%;
+          display: flex;
+          margin-inline: auto;
+          padding-block: 0.5rem;
+          font-size: 1rem;
+          color: #fff;
+          background-color: #4c4442;
+      }
+
+      .footer {
+          display: block;
+      }
+
+      .address {
+          display: block;
+          padding-block: 1rem;
+      }
+
+      .grid {
+          display: block;
+          background-color: #ebe3db;
+
+      }
+
+      .grid span {
+          margin-inline: 10%;
+          margin-top: 0;
+          margin-bottom: 1rem;
+      }
+
+      .formulaire form div {
+          display: block;
+      }
+
+
+      .contact h3 {
+          margin-left: 0;
+      }
+
+
+
+      .formulaire form {
+          width: 100%;
+          margin-inline: auto;
+          background-color: #ebe3db;
+          padding-bottom: 1rem;
+      }
+
+
+  }
